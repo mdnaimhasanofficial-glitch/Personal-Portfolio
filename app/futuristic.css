@@ -1,0 +1,9 @@
+html { scroll-behavior: smooth; }
+body { background: #05060a; color: #e6e8ee; }
+.glass { background: rgba(255,255,255,.04); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.1); }
+.glow-hover { transition: border-color .3s, box-shadow .3s; }
+.glow-hover:hover { border-color: rgba(34,211,238,.5); box-shadow: 0 0 32px -8px rgba(34,211,238,.45); }
+.text-gradient { background: linear-gradient(90deg,#22d3ee,#818cf8,#c084fc); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.bg-grid { background-image: linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size: 48px 48px; mask-image: radial-gradient(ellipse at center,#000 25%,transparent 75%); -webkit-mask-image: radial-gradient(ellipse at center,#000 25%,transparent 75%); }
+.btn-primary { background: linear-gradient(90deg,#06b6d4,#6366f1,#a855f7); color: #fff; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { animation: none !important; transition: none !important; } }
